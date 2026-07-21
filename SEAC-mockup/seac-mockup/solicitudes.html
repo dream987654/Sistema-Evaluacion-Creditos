@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SEAC · Solicitudes</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<div class="app">
+  <div class="sidebar">
+    <div class="brand">
+      <div class="logo">SE</div>
+      <div>
+        <div class="title">SEAC</div>
+        <div class="subtitle">Cooperativa Ética</div>
+      </div>
+    </div>
+    <nav>
+      <a href="dashboard.html"><span class="dot"></span>Panel principal</a>
+      <a href="solicitantes.html"><span class="dot"></span>Solicitantes</a>
+      <a href="solicitudes.html" class="active"><span class="dot"></span>Solicitudes</a>
+      <a href="evaluacion.html"><span class="dot"></span>Evaluación</a>
+      <a href="seguimiento.html"><span class="dot"></span>Seguimiento</a>
+      <a href="reportes.html"><span class="dot"></span>Reportes</a>
+    </nav>
+  </div>
+
+  <div class="main">
+    <div class="topbar">
+      <div>
+        <h1>Solicitudes de crédito</h1>
+        <p class="breadcrumb">Registro y estado de las solicitudes</p>
+      </div>
+      <span class="role-chip">Evaluador &middot; Ana Torres</span>
+    </div>
+
+    <div class="card" style="margin-bottom:18px;">
+      <div class="section-title">
+        <p>Listado de solicitudes</p>
+        <a href="#nueva" class="btn primary sm">+ Nueva solicitud</a>
+      </div>
+      <table>
+        <thead>
+          <tr>
+            <th>Solicitante</th>
+            <th>Monto</th>
+            <th>Plazo</th>
+            <th>Motivo</th>
+            <th>Estado</th>
+            <th>Fecha</th>
+            <th></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Rosa Quispe Torres</td>
+            <td>S/ 3,500</td>
+            <td>12 meses</td>
+            <td>Capital de trabajo</td>
+            <td><span class="badge amber">En evaluación</span></td>
+            <td>17/07/2026</td>
+            <td><a href="evaluacion.html" class="btn sm">Evaluar</a></td>
+          </tr>
+          <tr>
+            <td>Manuel Huamán Rojas</td>
+            <td>S/ 6,000</td>
+            <td>18 meses</td>
+            <td>Insumos agrícolas</td>
+            <td><span class="badge blue">Registrada</span></td>
+            <td>19/07/2026</td>
+            <td><a href="#" class="btn sm">Enviar a evaluación</a></td>
+          </tr>
+          <tr>
+            <td>Jorge Cárdenas Lima</td>
+            <td>S/ 2,200</td>
+            <td>6 meses</td>
+            <td>Compra de mercadería</td>
+            <td><span class="badge green">Aprobada</span></td>
+            <td>15/07/2026</td>
+            <td><a href="seguimiento.html" class="btn sm">Ver</a></td>
+          </tr>
+          <tr>
+            <td>Lucía Fernández Paucar</td>
+            <td>S/ 1,200</td>
+            <td>9 meses</td>
+            <td>Emergencia familiar</td>
+            <td><span class="badge red">Rechazada</span></td>
+            <td>12/07/2026</td>
+            <td><a href="seguimiento.html" class="btn sm">Ver</a></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="card" id="nueva">
+      <div class="section-title"><p>Registrar nueva solicitud</p></div>
+      <div class="form-row">
+        <div class="field">
+          <label>Solicitante</label>
+          <select>
+            <option>Rosa Quispe Torres &mdash; 45123456</option>
+            <option>Manuel Huamán Rojas &mdash; 47654321</option>
+            <option>Jorge Cárdenas Lima &mdash; 44890112</option>
+          </select>
+        </div>
+        <div class="field"><label>Monto solicitado (S/.)</label><input type="text" placeholder="3500" /></div>
+        <div class="field"><label>Plazo (meses)</label><input type="text" placeholder="12" /></div>
+      </div>
+      <div class="form-row">
+        <div class="field"><label>Motivo</label><input type="text" placeholder="Capital de trabajo" /></div>
+      </div>
+      <a href="solicitudes.html" class="btn primary">Registrar</a>
+    </div>
+  </div>
+</div>
+</body>
+</html>

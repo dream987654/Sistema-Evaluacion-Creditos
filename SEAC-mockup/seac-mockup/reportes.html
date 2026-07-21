@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SEAC · Reportes</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<div class="app">
+  <div class="sidebar">
+    <div class="brand">
+      <div class="logo">SE</div>
+      <div>
+        <div class="title">SEAC</div>
+        <div class="subtitle">Cooperativa Ética</div>
+      </div>
+    </div>
+    <nav>
+      <a href="dashboard.html"><span class="dot"></span>Panel principal</a>
+      <a href="solicitantes.html"><span class="dot"></span>Solicitantes</a>
+      <a href="solicitudes.html"><span class="dot"></span>Solicitudes</a>
+      <a href="evaluacion.html"><span class="dot"></span>Evaluación</a>
+      <a href="seguimiento.html"><span class="dot"></span>Seguimiento</a>
+      <a href="reportes.html" class="active"><span class="dot"></span>Reportes</a>
+    </nav>
+  </div>
+
+  <div class="main">
+    <div class="topbar">
+      <div>
+        <h1>Reportes de evaluación</h1>
+        <p class="breadcrumb">Indicadores generales del proceso de créditos</p>
+      </div>
+      <span class="role-chip">Gerencia &middot; Vista de indicadores</span>
+    </div>
+
+    <div class="grid-stats">
+      <div class="stat">
+        <p class="label">Total solicitudes</p>
+        <p class="value">37</p>
+      </div>
+      <div class="stat green">
+        <p class="label">Aprobadas</p>
+        <p class="value">21</p>
+      </div>
+      <div class="stat amber">
+        <p class="label">Observadas</p>
+        <p class="value">7</p>
+      </div>
+      <div class="stat red">
+        <p class="label">Rechazadas</p>
+        <p class="value">9</p>
+      </div>
+    </div>
+
+    <div class="stat blue" style="margin-bottom:18px;">
+      <p class="label">Monto total aprobado</p>
+      <p class="value">S/ 58,400</p>
+    </div>
+
+    <div class="card">
+      <div class="section-title"><p>Detalle por estado</p></div>
+      <table>
+        <thead>
+          <tr><th>Estado</th><th style="text-align:right;">Cantidad</th><th style="text-align:right;">% del total</th></tr>
+        </thead>
+        <tbody>
+          <tr><td><span class="badge green">Aprobada</span></td><td style="text-align:right;">21</td><td style="text-align:right;">57%</td></tr>
+          <tr><td><span class="badge amber">Observada</span></td><td style="text-align:right;">7</td><td style="text-align:right;">19%</td></tr>
+          <tr><td><span class="badge red">Rechazada</span></td><td style="text-align:right;">9</td><td style="text-align:right;">24%</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+</body>
+</html>

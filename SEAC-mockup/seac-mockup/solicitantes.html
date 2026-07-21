@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SEAC · Solicitantes</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<div class="app">
+  <div class="sidebar">
+    <div class="brand">
+      <div class="logo">SE</div>
+      <div>
+        <div class="title">SEAC</div>
+        <div class="subtitle">Cooperativa Ética</div>
+      </div>
+    </div>
+    <nav>
+      <a href="dashboard.html"><span class="dot"></span>Panel principal</a>
+      <a href="solicitantes.html" class="active"><span class="dot"></span>Solicitantes</a>
+      <a href="solicitudes.html"><span class="dot"></span>Solicitudes</a>
+      <a href="evaluacion.html"><span class="dot"></span>Evaluación</a>
+      <a href="seguimiento.html"><span class="dot"></span>Seguimiento</a>
+      <a href="reportes.html"><span class="dot"></span>Reportes</a>
+    </nav>
+  </div>
+
+  <div class="main">
+    <div class="topbar">
+      <div>
+        <h1>Solicitantes</h1>
+        <p class="breadcrumb">Gestión de personas que solicitan crédito</p>
+      </div>
+      <span class="role-chip">Evaluador &middot; Ana Torres</span>
+    </div>
+
+    <div class="card" style="margin-bottom:18px;">
+      <div class="section-title"><p>Listado de solicitantes</p></div>
+      <table>
+        <thead>
+          <tr>
+            <th>Nombre completo</th>
+            <th>DNI</th>
+            <th>Teléfono</th>
+            <th>Ocupación</th>
+            <th style="text-align:right;">Ingreso mensual</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Rosa Quispe Torres</td>
+            <td>45123456</td>
+            <td>964 123 456</td>
+            <td>Comerciante</td>
+            <td style="text-align:right;">S/ 1,800</td>
+          </tr>
+          <tr>
+            <td>Manuel Huamán Rojas</td>
+            <td>47654321</td>
+            <td>965 222 333</td>
+            <td>Agricultor</td>
+            <td style="text-align:right;">S/ 2,500</td>
+          </tr>
+          <tr>
+            <td>Jorge Cárdenas Lima</td>
+            <td>44890112</td>
+            <td>966 741 220</td>
+            <td>Comerciante</td>
+            <td style="text-align:right;">S/ 2,100</td>
+          </tr>
+          <tr>
+            <td>Lucía Fernández Paucar</td>
+            <td>48211099</td>
+            <td>967 305 812</td>
+            <td>Docente</td>
+            <td style="text-align:right;">S/ 2,900</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="card">
+      <div class="section-title"><p>Registrar solicitante</p></div>
+      <div class="form-row">
+        <div class="field"><label>Nombres</label><input type="text" placeholder="Rosa" /></div>
+        <div class="field"><label>Apellido paterno</label><input type="text" placeholder="Quispe" /></div>
+        <div class="field"><label>Apellido materno</label><input type="text" placeholder="Torres" /></div>
+      </div>
+      <div class="form-row">
+        <div class="field"><label>DNI</label><input type="text" placeholder="45123456" /></div>
+        <div class="field"><label>Teléfono</label><input type="text" placeholder="964 123 456" /></div>
+        <div class="field"><label>Correo</label><input type="text" placeholder="rosa@correo.com" /></div>
+      </div>
+      <div class="form-row">
+        <div class="field"><label>Ingreso mensual (S/.)</label><input type="text" placeholder="1800" /></div>
+        <div class="field"><label>Ocupación</label><input type="text" placeholder="Comerciante" /></div>
+      </div>
+      <a href="solicitantes.html" class="btn amber">Guardar</a>
+    </div>
+  </div>
+</div>
+</body>
+</html>

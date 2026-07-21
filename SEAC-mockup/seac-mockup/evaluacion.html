@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SEAC · Evaluación crediticia</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<div class="app">
+  <div class="sidebar">
+    <div class="brand">
+      <div class="logo">SE</div>
+      <div>
+        <div class="title">SEAC</div>
+        <div class="subtitle">Cooperativa Ética</div>
+      </div>
+    </div>
+    <nav>
+      <a href="dashboard.html"><span class="dot"></span>Panel principal</a>
+      <a href="solicitantes.html"><span class="dot"></span>Solicitantes</a>
+      <a href="solicitudes.html"><span class="dot"></span>Solicitudes</a>
+      <a href="evaluacion.html" class="active"><span class="dot"></span>Evaluación</a>
+      <a href="seguimiento.html"><span class="dot"></span>Seguimiento</a>
+      <a href="reportes.html"><span class="dot"></span>Reportes</a>
+    </nav>
+  </div>
+
+  <div class="main">
+    <div class="topbar">
+      <div>
+        <h1>Evaluación crediticia</h1>
+        <p class="breadcrumb">Sprint 3 &middot; Casos de uso CU-01 a CU-05</p>
+      </div>
+      <span class="role-chip">Evaluador &middot; Ana Torres</span>
+    </div>
+
+    <div class="card" style="margin-bottom:18px;">
+      <div class="section-title"><p>Solicitudes pendientes de evaluación (CU-01)</p></div>
+      <table>
+        <thead>
+          <tr><th>Solicitante</th><th>Monto</th><th>Estado</th><th></th></tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Rosa Quispe Torres</td>
+            <td>S/ 3,500</td>
+            <td><span class="badge amber">En evaluación</span></td>
+            <td><a href="#detalle" class="btn primary sm">Evaluar</a></td>
+          </tr>
+          <tr>
+            <td>Carlos Injante Vera</td>
+            <td>S/ 4,800</td>
+            <td><span class="badge amber">Observada</span></td>
+            <td><a href="#detalle" class="btn primary sm">Evaluar</a></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="card" id="detalle" style="margin-bottom:18px;">
+      <div class="section-title"><p>Evaluación crediticia &mdash; Solicitud #1024</p></div>
+      <p style="font-size:12.5px; color:var(--text-secondary); margin:-6px 0 12px;">CU-02: consultar información del solicitante</p>
+
+      <div class="stat blue" style="margin-bottom:16px;">
+        <div class="form-row" style="margin-bottom:0;">
+          <div><span style="font-size:12.5px; color:var(--blue-800);">Solicitante</span><p style="margin:2px 0 0; font-weight:600;">Rosa Quispe Torres</p></div>
+          <div><span style="font-size:12.5px; color:var(--blue-800);">Ingreso mensual</span><p style="margin:2px 0 0; font-weight:600;">S/ 1,800</p></div>
+          <div><span style="font-size:12.5px; color:var(--blue-800);">Monto solicitado</span><p style="margin:2px 0 0; font-weight:600;">S/ 3,500</p></div>
+          <div><span style="font-size:12.5px; color:var(--blue-800);">Plazo</span><p style="margin:2px 0 0; font-weight:600;">12 meses</p></div>
+        </div>
+      </div>
+
+      <p style="font-size:12.5px; color:var(--text-secondary); margin:0 0 8px;">CU-03 / CU-04 / CU-05: observaciones, resultado y guardado</p>
+      <div class="field" style="margin-bottom:14px;">
+        <label>Observaciones</label>
+        <textarea rows="3" placeholder="Ingresos verificados, sin deudas pendientes.">Ingresos verificados, sin deudas registradas en central de riesgo.</textarea>
+      </div>
+      <div class="field" style="margin-bottom:16px; max-width:320px;">
+        <label>Resultado de la evaluación</label>
+        <select>
+          <option>Aprobado para revisión</option>
+          <option>Observado</option>
+          <option>No recomendable</option>
+        </select>
+      </div>
+      <a href="seguimiento.html" class="btn green">Guardar evaluación</a>
+      <a href="evaluacion.html" class="btn">Cancelar</a>
+    </div>
+  </div>
+</div>
+</body>
+</html>

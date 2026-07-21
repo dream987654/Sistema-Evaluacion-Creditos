@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SEAC · Seguimiento</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<div class="app">
+  <div class="sidebar">
+    <div class="brand">
+      <div class="logo">SE</div>
+      <div>
+        <div class="title">SEAC</div>
+        <div class="subtitle">Cooperativa Ética</div>
+      </div>
+    </div>
+    <nav>
+      <a href="dashboard.html"><span class="dot"></span>Panel principal</a>
+      <a href="solicitantes.html"><span class="dot"></span>Solicitantes</a>
+      <a href="solicitudes.html"><span class="dot"></span>Solicitudes</a>
+      <a href="evaluacion.html"><span class="dot"></span>Evaluación</a>
+      <a href="seguimiento.html" class="active"><span class="dot"></span>Seguimiento</a>
+      <a href="reportes.html"><span class="dot"></span>Reportes</a>
+    </nav>
+  </div>
+
+  <div class="main">
+    <div class="topbar">
+      <div>
+        <h1>Seguimiento de solicitudes</h1>
+        <p class="breadcrumb">Estado actual y trazabilidad</p>
+      </div>
+      <span class="role-chip">Evaluador &middot; Ana Torres</span>
+    </div>
+
+    <div class="card" style="margin-bottom:18px;">
+      <div class="section-title"><p>Solicitudes</p></div>
+      <table>
+        <thead>
+          <tr><th>Solicitante</th><th>Monto</th><th>Estado actual</th><th></th></tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Rosa Quispe Torres</td>
+            <td>S/ 3,500</td>
+            <td><span class="badge amber">En evaluación</span></td>
+            <td><a href="#historial" class="btn sm">Ver historial</a></td>
+          </tr>
+          <tr>
+            <td>Manuel Huamán Rojas</td>
+            <td>S/ 6,000</td>
+            <td><span class="badge blue">Registrada</span></td>
+            <td><a href="#historial" class="btn sm">Ver historial</a></td>
+          </tr>
+          <tr>
+            <td>Jorge Cárdenas Lima</td>
+            <td>S/ 2,200</td>
+            <td><span class="badge green">Aprobada</span></td>
+            <td><a href="#historial" class="btn sm">Ver historial</a></td>
+          </tr>
+          <tr>
+            <td>Lucía Fernández Paucar</td>
+            <td>S/ 1,200</td>
+            <td><span class="badge red">Rechazada</span></td>
+            <td><a href="#historial" class="btn sm">Ver historial</a></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="card" id="historial">
+      <div class="section-title"><p>Historial &mdash; Solicitud #1024 (Rosa Quispe Torres &middot; S/ 3,500)</p></div>
+      <div class="timeline">
+        <div class="item">
+          <div class="dot-col"><div class="dot" style="background:#3B6D11"></div><div class="line"></div></div>
+          <div class="content">
+            <p>Registrada &rarr; En evaluación</p>
+            <p class="when">17/07/2026 09:12 &middot; Sistema</p>
+          </div>
+        </div>
+        <div class="item">
+          <div class="dot-col"><div class="dot" style="background:#EF9F27"></div><div class="line"></div></div>
+          <div class="content">
+            <p>En evaluación &rarr; Observada</p>
+            <p class="when">18/07/2026 16:40 &middot; Ana Torres</p>
+          </div>
+        </div>
+        <div class="item">
+          <div class="dot-col"><div class="dot" style="background:#185FA5"></div></div>
+          <div class="content">
+            <p>Observada &rarr; En evaluación</p>
+            <p class="when">20/07/2026 08:05 &middot; Ana Torres</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+</html>

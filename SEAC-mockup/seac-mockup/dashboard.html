@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SEAC · Panel principal</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<div class="app">
+  <div class="sidebar">
+    <div class="brand">
+      <div class="logo">SE</div>
+      <div>
+        <div class="title">SEAC</div>
+        <div class="subtitle">Cooperativa Ética</div>
+      </div>
+    </div>
+    <nav>
+      <a href="dashboard.html" class="active"><span class="dot"></span>Panel principal</a>
+      <a href="solicitantes.html"><span class="dot"></span>Solicitantes</a>
+      <a href="solicitudes.html"><span class="dot"></span>Solicitudes</a>
+      <a href="evaluacion.html"><span class="dot"></span>Evaluación</a>
+      <a href="seguimiento.html"><span class="dot"></span>Seguimiento</a>
+      <a href="reportes.html"><span class="dot"></span>Reportes</a>
+    </nav>
+  </div>
+
+  <div class="main">
+    <div class="topbar">
+      <div>
+        <h1>Panel principal</h1>
+        <p class="breadcrumb">Resumen general del sistema</p>
+      </div>
+      <span class="role-chip">Evaluador &middot; Ana Torres</span>
+    </div>
+
+    <div class="grid-stats">
+      <div class="stat">
+        <p class="label">Solicitantes registrados</p>
+        <p class="value">128</p>
+      </div>
+      <div class="stat">
+        <p class="label">Solicitudes activas</p>
+        <p class="value">37</p>
+      </div>
+      <div class="stat blue">
+        <p class="label">Pendientes de evaluar</p>
+        <p class="value">9</p>
+      </div>
+      <div class="stat amber">
+        <p class="label">Monto aprobado (mes)</p>
+        <p class="value">S/ 58,400</p>
+      </div>
+    </div>
+
+    <div class="two-col">
+      <div class="card">
+        <div class="section-title">
+          <p>Solicitudes recientes</p>
+          <a href="solicitudes.html" class="btn primary sm">+ Nueva solicitud</a>
+        </div>
+
+        <div class="row-item">
+          <div>
+            <p class="name">Rosa Quispe Torres</p>
+            <p class="meta">S/ 3,500 &middot; 12 meses &middot; Capital de trabajo</p>
+          </div>
+          <div class="right">
+            <span class="badge amber">En evaluación</span>
+            <a href="evaluacion.html" class="btn sm">Evaluar</a>
+          </div>
+        </div>
+
+        <div class="row-item">
+          <div>
+            <p class="name">Manuel Huamán Rojas</p>
+            <p class="meta">S/ 6,000 &middot; 18 meses &middot; Insumos agrícolas</p>
+          </div>
+          <div class="right">
+            <span class="badge blue">Registrada</span>
+            <a href="solicitudes.html" class="btn sm">Ver</a>
+          </div>
+        </div>
+
+        <div class="row-item">
+          <div>
+            <p class="name">Jorge Cárdenas Lima</p>
+            <p class="meta">S/ 2,200 &middot; 6 meses &middot; Compra de mercadería</p>
+          </div>
+          <div class="right">
+            <span class="badge green">Aprobada</span>
+            <a href="seguimiento.html" class="btn sm">Ver</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="section-title"><p>Historial de actividad</p></div>
+        <div class="timeline">
+          <div class="item">
+            <div class="dot-col"><div class="dot" style="background:#185FA5"></div><div class="line"></div></div>
+            <div class="content">
+              <p>Solicitud #1024 enviada a evaluación</p>
+              <p class="when">Hoy, 09:12 &middot; Rosa Quispe</p>
+            </div>
+          </div>
+          <div class="item">
+            <div class="dot-col"><div class="dot" style="background:#EF9F27"></div><div class="line"></div></div>
+            <div class="content">
+              <p>Solicitud #1023 marcada como observada</p>
+              <p class="when">Ayer, 16:40 &middot; Ana Torres</p>
+            </div>
+          </div>
+          <div class="item">
+            <div class="dot-col"><div class="dot" style="background:#3B6D11"></div><div class="line"></div></div>
+            <div class="content">
+              <p>Solicitud #1021 aprobada por S/ 2,200</p>
+              <p class="when">Ayer, 11:05 &middot; Ana Torres</p>
+            </div>
+          </div>
+          <div class="item">
+            <div class="dot-col"><div class="dot" style="background:#888780"></div></div>
+            <div class="content">
+              <p>Nuevo solicitante registrado</p>
+              <p class="when">Lun, 08:30 &middot; Sistema</p>
+            </div>
+          </div>
+        </div>
+        <a href="seguimiento.html" class="btn" style="width:100%; justify-content:center; margin-top:8px;">Ver historial completo</a>
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+</html>
